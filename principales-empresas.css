@@ -1,0 +1,133 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #4F57FF;
+}
+
+.caja-emp{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*capturando movimiento (evento) del mouse*/
+nav a:hover{
+    color: #ff954f;
+}
+
+.container-emp{
+    padding: 3rem 0;
+}
+
+.empresas-items{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-areas:
+    "img-empresa"
+    "card-base";
+    grid-template-columns: 100%;
+    width: calc(20%-1rem);
+}
+
+.img-empresa{
+    grid-area: img-empresa;
+    height: 100%;
+    width: 100%;
+}
+
+.card-base{
+    display: grid;
+    grid-area: card-base;
+    grid-row: 0.5rem;
+    grid-template-rows:
+    "card-header"
+    "description-emp";
+    grid-template-rows: 50px auto;
+    padding: 0.75rem;
+}
+
+.description-emp{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: description-emp;
+    padding: 1rem 0rem;
+}
+
+
+
+
+
+/*
+.empresas{
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.empresas li{
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    text-align:justify;
+    background-color: #FFFFFF;
+    margin: 0 1.5%;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border: 2px solid #4F57FF;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.empresas li img{
+    width: 150px;
+    height: 150px;
+}
+
+.empresas h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.empresas .img-personalizable{
+    width: 200px;
+    height: 150px
+}
+
+
+
+.description-emp{
+    font-size: 15px;
+    margin-top: 5px;/*separar descripcion de la imagen*//*
+    padding-right: 2px;
+}*/
+
+
+
+footer{
+    text-align: center;
+    background-color: #2F3DBB;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 13px;
+}

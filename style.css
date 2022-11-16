@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2F3DBB;
+    height: 100%;
+
+}
+
+header{
+    padding: 20px;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.titulo-principal{
+    grid-column: 1/3;
+    padding-left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-img{
+    padding: 0 0 0 50px;
+}
+
+.muskPrincipal{
+    grid-column: 1;
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.container-parrafo, .titulo-secundario{
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.caja{/*encapasula logo y menu*/
+    width: 940px; /*940px equivale al 70% de 1280px que es lo que traen las pantallas normalmente*/
+    position: relative;
+    margin: 0 auto; /*0 = a parte superior e inferior y atuo para los bordes*/
+
+
+}
+
+nav{
+    position:absolute;
+    top: 90px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover{
+    color: #ff954f;
+    text-decoration: underline;
+}
+.Titulo-secundario{
+    text-align:center;
+    top: 0;
+    padding-left: 40rem;
+}
+
+
+
+footer{
+    display: block;
+    text-align: center;
+
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    font-size: 13px;/*disminuir fuente*/
+}
+
+@media screen and (max-width:480px) {
+    figure{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .caja, .container-parrafo, .titulo-secundario{
+        width: auto;
+    }
+
+}
+
+
+
+
+
+
+
+

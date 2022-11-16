@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contacta.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja-contaco">
+                <h1><img src="imgWTribut/Logom-removebg-preview.png"></h1>
+                 <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="principales_empresas.html">Empresas</a></li>
+                        <li><a href="contacta.html">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form action="">
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+                <!--relacionar label con id y para que cuando el usuario haga click sobre el nombre la caja se quede con el puntero parpadeante-->
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx)xxxxxxxxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset><!--etiqueta especial para hacer referencia a el mismo evento o informacion-->
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+                    <label for="radio"><input type="radio" name="contacta" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio"><input type="radio" name="contacta" value="telefono" id="radio-telefono">Telefono</label>
+                    
+
+                    <label for="radio"><input type="radio" name="contacta" value="email" id="radio-whatssap" checked>Whatssap</label>
+                    
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend><!--se cambia por la etiqueta p para mejorar la semantica-->
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de CompanyTributs</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+                
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00am ~ 5:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08:00am ~ 5:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>miercoles</td>
+                        <td>08:00am ~ 5:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08:00am ~ 5:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00am ~ 5:00pm</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+
+        <footer>
+            <img src="imgWTribut/Logom-removebg-preview.png">
+            <p class="copyright">&copy Copyright Tribute Elonk Musk-2022</p>
+        </footer>
+    </body>
+
+</html>
